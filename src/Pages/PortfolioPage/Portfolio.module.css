@@ -1,0 +1,46 @@
+.portfolios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.page {
+    left: 10px;
+}
+
+.seperate {
+    display:flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    
+}
+.seperate article{
+    width: 20%;
+    height:auto;
+    margin:var(--m-small);
+    border:1px solid black;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color:rgba(0, 0, 0,0.1);
+}
+.seperate article p{
+    font-size:.9rem
+}
+
+.searchbalk {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    min-height: 10vh;
+}
+.blok{
+    border-style: solid;
+    border-color: black;
+    border-radius: 10px;
+}
+.link{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+}

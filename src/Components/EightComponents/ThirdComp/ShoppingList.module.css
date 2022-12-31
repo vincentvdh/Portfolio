@@ -1,0 +1,10 @@
+.shoppAddForm{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.error{
+    color:red;
+}
+.succes{
+    color:green;
+}
