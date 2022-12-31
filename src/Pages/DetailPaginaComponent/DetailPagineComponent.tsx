@@ -45,7 +45,6 @@ const DetailPagineComponent = () => {
   return (
     <div>
       <Bepaling />
-      <Link to="/portfolio">Overzicht</Link>
     </div>
   )
 }

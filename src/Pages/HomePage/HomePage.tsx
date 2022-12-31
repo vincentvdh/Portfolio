@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Chart from '../../Components/Chart/Chart';
 import styles from './HomePage.module.css';
 
 const HomePage = () => {
@@ -24,14 +25,11 @@ const HomePage = () => {
 
                 <div className={styles.section}>
                     <div>
-                        <p>API Joke</p>
+                        <p>Zoals je op de grafiek kan terugvinden ligt mijn kennis van de programmeer talen heel verspreid <br />
+                            Hoewel AP ons een goeie basis geeft van verschillede talen kan ik mij het beste terugvinden in die talen. <br />
+                            Je merkt ook snel op dat ik meer bezig ben met JS en TS dit komt omdat mijn interesse daar meer ligt.</p>
                     </div>
-                    <div>
-                        <p>Mijn punten liggen vrij verspreid. Ap heeft ons een basis van alles gegeven maar ik kan nog veel bijleren.</p>
-                    </div>
-                    <div>
-                        <p> staafdiagram </p>
-                    </div>
+                    <Chart />
                 </div>
             </main>
         </>
