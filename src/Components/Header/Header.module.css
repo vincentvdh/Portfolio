@@ -1,14 +1,18 @@
-.navigation ul{
+
+/* Light mode*/
+.navigation ul {
     list-style-type: none;
-    margin:0;
+    margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: grey;
+    background-color: lightgrey;
 }
-.navigation li{
+
+.navigation li {
     float: left;
 }
-.navigation li a{
+
+.navigation li a {
     display: block;
     text-decoration: none;
     text-align: center;
@@ -16,9 +20,44 @@
     justify-content: space-around;
     padding: 20px;
 }
-.active{
+
+.active {
+    background-color: #504e4e;
+}
+
+
+.notactive {
     background-color: lightgrey;
 }
-.notactive{
-    background-color:  grey;
+
+
+/* Dark mode */
+.navigationDark ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #504e4e;
+}
+
+.navigationDark li {
+    float: left;
+}
+
+.navigationDark li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: lightgrey;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.navigationDark .active {
+    background-color: lightgrey;
+    color: #504e4e;
+}
+
+.navigationDark .notactive {
+    background-color: #504e4e;
 }

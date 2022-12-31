@@ -1,0 +1,18 @@
+.switch button {
+    background-color: transparent;
+    border: none;
+}
+
+.switchIcon {
+    color: white;
+}
+
+.switchIcon:hover {
+    color: grey;
+}
+.switchIconDark{
+    color: black;
+}
+.switchIconDark:hover {
+    color: #2f2e2d;
+}

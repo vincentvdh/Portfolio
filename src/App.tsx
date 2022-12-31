@@ -5,9 +5,17 @@ import Root from './Components/Root/Root';
 import ContactPage from './Pages/ContactPage/ContactPage';
 import DetailPagineComponent from './Pages/DetailPaginaComponent/DetailPagineComponent';
 import PageNotFound from './Pages/PageNotFound/PageNotFound';
+import React, { useState } from 'react';
 
+interface IThemeContext {
+  theme: string,
+  setTheme: (theme: string) => void
+}
+
+export const ThemeContext = React.createContext<IThemeContext>({ theme: 'light',setTheme: (theme:string) => {} });
 
 const App = () => {
+  const [theme, setTheme] = useState("light");
   const router = createBrowserRouter([
     {
       path: "/",
@@ -23,20 +31,24 @@ const App = () => {
         },
         {
           path: "portfolio/:id",
-          element: <DetailPagineComponent/>
+          element: <DetailPagineComponent />
         },
         {
           path: "contact",
           element: <ContactPage />
-        },{
+        }, {
           path: "*",
-          element: <PageNotFound/>
-      }
+          element: <PageNotFound />
+        }
       ]
     }
   ])
+
+
   return (
-    <RouterProvider router={router} />
+    <ThemeContext.Provider value={{ theme: theme,setTheme:setTheme }}>
+      <RouterProvider router={router} />
+    </ThemeContext.Provider>
   )
 }
 

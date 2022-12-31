@@ -34,13 +34,28 @@
     text-align: center;
     min-height: 10vh;
 }
-.blok{
-    border-style: solid;
-    border-color: black;
-    border-radius: 10px;
-}
+
 .link{
     list-style-type: none;
     text-decoration: none;
     color: black;
+}
+
+
+ /* Dark mode*/ 
+.seperateDark article{
+    width: 20%;
+    height:auto;
+    margin:var(--m-small);
+    border:1px solid black;
+    border-radius: 0.5rem;
+    text-align: center;
+    background-color:rgba(0, 0, 0,0.1);
+}
+
+
+.linkDark{
+    list-style-type: none;
+    text-decoration: none;
+    color: lightgrey;
 }
