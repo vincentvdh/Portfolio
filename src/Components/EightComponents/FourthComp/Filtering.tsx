@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 
 interface NaamProps {
@@ -22,15 +22,15 @@ const Filtering = () => {
         { name: "Korneel", age: 21, year: 4 }
     ];
 
-    namen.sort((a,b) => {
+    namen.sort((a, b) => {
         if (sort === "name") {
             return a.name.localeCompare(b.name);
-        }else if(sort === "age"){
+        } else if (sort === "age") {
             return a.age - b.age;
-        }else if(sort === "year"){
+        } else if (sort === "year") {
             return a.year - b.year;
         }
-        else{
+        else {
             return 0
         }
     })

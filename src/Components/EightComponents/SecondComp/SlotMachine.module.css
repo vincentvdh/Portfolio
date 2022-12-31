@@ -1,8 +1,9 @@
-.won{
+.won {
     color: green;
     font-size: 22pt;
 }
-.lost{
+
+.lost {
     color: red;
     font-size: 22pt;
 }

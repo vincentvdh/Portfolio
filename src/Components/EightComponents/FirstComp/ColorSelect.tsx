@@ -26,11 +26,11 @@ const ColorSelect = () => {
                 <option value="violet">Violet</option>
             </select>
             <button onClick={handleColor}>Add</button>
-            
+
             <div className={styles.colorContainer}>
                 {
-                    color.map((kleur) =>(
-                        <div style={{ backgroundColor: kleur, height: 200,flex: 1,}} />
+                    color.map((kleur) => (
+                        <div style={{ backgroundColor: kleur, height: 200, flex: 1, }} />
                     ))
                 }
             </div>

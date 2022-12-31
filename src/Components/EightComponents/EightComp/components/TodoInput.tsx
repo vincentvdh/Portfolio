@@ -1,11 +1,9 @@
 import { useState } from "react";
 
-
-
-interface TodoInput {
+interface TodoInputprop {
     addTodo: (todo: string) => void
 }
-const TodoInput = ({ addTodo }: TodoInput) => {
+const TodoInput = ({ addTodo }: TodoInputprop) => {
     const [todo, setTodo] = useState("");
 
     const addButtonClicked = () => {

@@ -8,11 +8,13 @@
 }
 
 .switchIcon:hover {
-    color: grey;
+    color: yellow;
 }
-.switchIconDark{
-    color: black;
-}
-.switchIconDark:hover {
+
+.switchIconDark {
     color: #2f2e2d;
+}
+
+.switchIconDark:hover {
+    color: black;
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TodoInput from "../components/TodoInput";
 import TodoList from "../components/TodoList";
-import {TodoItem} from "../types"
+import { TodoItem } from "../types"
 
 const Lijst = () => {
   const [todos, setTodos] = useState<TodoItem[]>([]);
@@ -14,8 +14,8 @@ const Lijst = () => {
 
   return (
     <div>
-      <TodoInput addTodo={addTodo}/>
-      <TodoList todos = {todos} markCompleted = {markCompleted}/>
+      <TodoInput addTodo={addTodo} />
+      <TodoList todos={todos} markCompleted={markCompleted} />
     </div>
   );
 }

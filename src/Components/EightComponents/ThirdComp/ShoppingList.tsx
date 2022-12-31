@@ -26,14 +26,14 @@ const ShoppingList = () => {
             setErrorMessage("Een boodschap zonder hoeveelheid bestaat niet!")
             setSuccesMessage("")
         }
-        else if(name == ""){
+        else if (name === "") {
             setErrorMessage("Een naamloze boodschap bestaat niet!")
             setSuccesMessage("")
         }
         else {
             setShoppingList([...shoppingList, { name: name, quantity: quantity }])
 
-            setSuccesMessage(name +" is toegevoegd aan de boodschappenlijst")
+            setSuccesMessage(name + " is toegevoegd aan de boodschappenlijst")
             setErrorMessage("")
         }
 
@@ -41,7 +41,7 @@ const ShoppingList = () => {
     const removeItem = (index: number) => {
         let shoppingListCopy = shoppingList.filter((item, i) => i !== index);
         setShoppingList(shoppingListCopy);
-        setSuccesMessage( "Item is verwijderd van de boodschappenlijst")
+        setSuccesMessage("Item is verwijderd van de boodschappenlijst")
         setErrorMessage("")
     }
 

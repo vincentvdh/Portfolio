@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react';
+import { useRef, } from 'react';
 import styles from './ContactPage.module.css';
 import emailjs from '@emailjs/browser';
-
-
+import QuotesAPI from '../../Components/API/QuotesAPI/QuotesAPI';
 
 const ContactPage = () => {
     const form: any = useRef();
@@ -18,12 +17,14 @@ const ContactPage = () => {
         e.target.reset();
     };
 
+
     return (
         <>
             <main>
-                <h1> ContactPage</h1>
+                <h1> Contact pagina</h1>
                 <div className={styles.page}>
                     <div >
+                        <h3>Neem zeker contact op met mij <br /> indien u nog vragen heeft of opmerkingen.</h3>
                         <form ref={form} onSubmit={sendEmail} className={styles.form}>
                             <input type="text" placeholder='Volledige naam' name='user_name' required />
                             <input type="email" placeholder='Email' name='user_email' required />
@@ -33,7 +34,7 @@ const ContactPage = () => {
                         </form>
                     </div>
                     <div>
-                        <p>API</p>
+                        <QuotesAPI />
                     </div>
                 </div>
             </main>

@@ -1,12 +1,13 @@
-.pages{
-    min-height:100vh; 
-    display:flex; 
-    flex-direction:column;        
-    justify-content:space-between;
+.pages {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: white;
 }
-.pagesDark{
-    
+
+.pagesDark {
+
     color: lightgrey;
     background-color: #2f2e2d;
 }

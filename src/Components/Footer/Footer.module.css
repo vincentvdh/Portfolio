@@ -1,10 +1,11 @@
-.container{
+.container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     background-color: lightgrey;
 }
-.containerDark{
+
+.containerDark {
     display: flex;
     flex-direction: row;
     justify-content: space-around;

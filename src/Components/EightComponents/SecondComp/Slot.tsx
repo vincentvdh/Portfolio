@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from "./Slot.module.css"
 let images = [
   require("./Images/cherry.png"),
@@ -7,13 +6,13 @@ let images = [
   require("./Images/prune.png"),
   require("./Images/seven.png")
 ]
-interface SlotProp{
-  value:number;
+interface SlotProp {
+  value: number;
 }
-const Slot = ({value}:SlotProp) => {
+const Slot = ({ value }: SlotProp) => {
   return (
     <>
-        <img src={images[value]} alt="slot" width={100} className={styles.slot} />
+      <img src={images[value]} alt="slot" width={100} className={styles.slot} />
     </>
   )
 }

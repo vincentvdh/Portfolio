@@ -5,7 +5,7 @@ const Calculator = () => {
     const [count2, setCount2] = useState<number>(1);
     const [things, setThings] = useState<string>("+");
     const [calculate, setCalculate] = useState<number>(2);
-    const [error,setError] = useState<string | undefined>();
+    const [error, setError] = useState<string | undefined>();
 
     const Bereken: React.MouseEventHandler<HTMLButtonElement> = () => {
         setError(undefined)
@@ -17,15 +17,15 @@ const Calculator = () => {
         }
         else if (things === "*") {
             setCalculate(count1 * count2);
-            
+
         }
         else {
-            
+
             if (count2 === 0) {
                 setError("cannot devide by zero");
             }
-            else{setCalculate(count1 / count2);}
-            
+            else { setCalculate(count1 / count2); }
+
         }
     }
 

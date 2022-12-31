@@ -12,7 +12,7 @@ interface IThemeContext {
   setTheme: (theme: string) => void
 }
 
-export const ThemeContext = React.createContext<IThemeContext>({ theme: 'light',setTheme: (theme:string) => {} });
+export const ThemeContext = React.createContext<IThemeContext>({ theme: 'light', setTheme: (theme: string) => { } });
 
 const App = () => {
   const [theme, setTheme] = useState("light");
@@ -46,7 +46,7 @@ const App = () => {
 
 
   return (
-    <ThemeContext.Provider value={{ theme: theme,setTheme:setTheme }}>
+    <ThemeContext.Provider value={{ theme: theme, setTheme: setTheme }}>
       <RouterProvider router={router} />
     </ThemeContext.Provider>
   )

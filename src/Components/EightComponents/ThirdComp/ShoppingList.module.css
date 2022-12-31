@@ -1,10 +1,12 @@
-.shoppAddForm{
+.shoppAddForm {
     display: grid;
     grid-template-columns: 100px 1fr;
 }
-.error{
-    color:red;
+
+.error {
+    color: red;
 }
-.succes{
-    color:green;
+
+.succes {
+    color: green;
 }

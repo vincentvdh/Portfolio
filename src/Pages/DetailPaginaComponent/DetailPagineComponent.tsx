@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Lijst from '../../Components/EightComponents/EightComp/page/Lijst';
 import Counter from '../../Components/EightComponents/FifthComp/Counter';
 import ColorSelect from '../../Components/EightComponents/FirstComp/ColorSelect';
@@ -20,22 +20,22 @@ const DetailPagineComponent = () => {
       return <SlotMachine slots={3} />
     }
     else if (number === 3) {
-      return <ShoppingList/>
+      return <ShoppingList />
     }
     else if (number === 4) {
-      return <Filtering/>
+      return <Filtering />
     }
     else if (number === 5) {
-      return <Counter/>
+      return <Counter />
     }
     else if (number === 6) {
-      return <ColorBox/>
+      return <ColorBox />
     }
     else if (number === 7) {
-      return <Calculator/>
+      return <Calculator />
     }
     else if (number === 8) {
-      return <Lijst/>
+      return <Lijst />
     }
     else {
 
@@ -44,6 +44,7 @@ const DetailPagineComponent = () => {
   }
   return (
     <div>
+      <h1>Detail Pagina</h1>
       <Bepaling />
     </div>
   )

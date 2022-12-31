@@ -1,4 +1,3 @@
-
 import { useContext } from "react";
 import { Outlet } from "react-router-dom";
 import { ThemeContext } from "../../App";
@@ -9,7 +8,7 @@ import styles from './Root.module.css';
 const Root = () => {
   const { theme } = useContext(ThemeContext)
   return (
-    <div className={`${styles.pages} ${theme === 'dark' ? styles.pagesDark: ''}`}>
+    <div className={`${styles.pages} ${theme === 'dark' ? styles.pagesDark : ''}`}>
       <div>
         <Header />
         <Outlet />

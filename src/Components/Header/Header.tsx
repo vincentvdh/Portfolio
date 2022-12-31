@@ -6,7 +6,7 @@ import SwitchContext from '../SwitchContext/SwitchContext';
 
 
 const Header = () => {
-    const { theme, setTheme } = useContext(ThemeContext)
+    const { theme } = useContext(ThemeContext)
     return (
         <header >
             {/* <nav className={`${styles.nav} ${mode == 'dark' ? styles.navDark: ''}`}> */}
@@ -15,9 +15,9 @@ const Header = () => {
                     <li><NavLink className={({ isActive }: any) => isActive ? styles.active : styles.notactive} to="/">Home</NavLink></li>
                     <li><NavLink className={({ isActive }: any) => isActive ? styles.active : styles.notactive} to="/portfolio">PortfolioPage</NavLink></li>
                     <li><NavLink className={({ isActive }: any) => isActive ? styles.active : styles.notactive} to="/contact">ContactPage</NavLink></li>
-                    <SwitchContext/>
+                    <SwitchContext />
                 </ul>
-                
+
             </nav>
         </header>
     )

@@ -27,14 +27,14 @@ const Counter = () => {
                 return (
                     <div
                         key={index}
-                        style={{ display: "flex", flex:1,flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
+                        style={{ display: "flex", flex: 1, flexDirection: "row", alignItems: "center", justifyContent: "space-between" }}>
                         <button onClick={() => increaseCounter(index)}>Omhoog</button>
-                        <div style={{color:color}}>Count: {counter}</div>
+                        <div style={{ color: color }}>Count: {counter}</div>
                         <button onClick={() => decreaseCounter(index)}>Omlaag</button>
                     </div>
                 )
             })}
-            <div> Som van de tellers {counters.reduce((prev,curr) => prev+curr,0)}</div>
+            <div> Som van de tellers {counters.reduce((prev, curr) => prev + curr, 0)}</div>
             <button onClick={addCounter}>Voeg teller toe</button>
         </React.Fragment>
     )

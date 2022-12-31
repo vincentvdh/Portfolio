@@ -1,9 +1,10 @@
-.page{
+.page {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
 }

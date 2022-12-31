@@ -6,14 +6,14 @@ const data = [
     { name: "Php", value: 10 },
     { name: "JS", value: 30 },
     { name: "Python", value: 20 },
-    
+
 ]
 
 
 const Chart = () => {
     return (
         <div>
-            
+
             <PieChart width={200} height={200}>
                 <Pie
                     dataKey="value"
@@ -25,7 +25,7 @@ const Chart = () => {
                     fill="#8884d8"
                     label
                 />
-                
+
                 <Tooltip />
             </PieChart>
         </div>
