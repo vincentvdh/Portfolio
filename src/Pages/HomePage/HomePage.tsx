@@ -6,7 +6,7 @@ const HomePage = () => {
     return (
         <>
             <main>
-                <h1> Home</h1>
+                <h1> Home 1</h1>
                 <div className={styles.section}>
                     <div>
                         <img src="/Pasfoto.png" alt="Pasfoto" title='Pasfoto Vincent' />
